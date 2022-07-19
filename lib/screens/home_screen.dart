@@ -182,7 +182,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   Navigator.push(context, PageTransition(type: PageTransitionType.leftToRight, child: DetailScreen()));
                 },
                 child: Container(
-                  margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 5.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -196,7 +195,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 color: MyColors.Orange,
                                 fontSize: 16.0)),
                       ),
-                      SizedBox(height: 5,),
+                      
                       RichText(
                         textAlign: TextAlign.start,
                         text: TextSpan(
@@ -211,7 +210,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           RichText(
                             textAlign: TextAlign.start,
                             text: TextSpan(
-                                text: "\FCFA ${e.price}",
+                                text: "\F ${e.price}",
                                 style: const TextStyle(
                                     color: Colors.black87,
                                     fontSize: 15.0,
